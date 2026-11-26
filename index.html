@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clasificador Matemático</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Clasificador de Funciones</h1>
+        <p>Aprende a identificar diferentes tipos de funciones</p>
+    </header>
+
+    <main>
+
+        <section class="panel">
+
+            <h2>Generador de coeficientes</h2>
+
+            <div class="datos">
+                <p id="valorB">b = 0</p>
+                <p id="valorC">c = 0</p>
+            </div>
+
+            <button id="generar" type="button">
+                Crear nuevos valores
+            </button>
+
+        </section>
+
+        <section class="resultados">
+
+            <h2>Clasificación obtenida</h2>
+
+            <article class="caja" id="lineal">
+                <h3>Función lineal</h3>
+                <p id="resultadoLineal"></p>
+            </article>
+
+            <article class="caja" id="afin">
+                <h3>Función afín</h3>
+                <p id="resultadoAfin"></p>
+            </article>
+
+            <article class="caja" id="constante">
+                <h3>Función constante</h3>
+                <p id="resultadoConstante"></p>
+            </article>
+
+            <article class="caja" id="noHay">
+                <h3>No hay función</h3>
+                <p id="resultadoNoHay"></p>
+            </article>
+
+        </section>
+
+        <section class="zona-grafica">
+
+            <h2>Representación gráfica</h2>
+
+            <p>Observa cómo se comporta la función en el plano cartesiano.</p>
+
+            <div id="ggb-element"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Proyecto de Matemáticas - Clasificador de Funciones</p>
+    </footer>
+
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
